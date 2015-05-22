@@ -2,3 +2,10 @@
 name = "cos"
 version = "0.1.0"
 authors = ["Daniel Miranda <danielkza2@gmail.com>"]
+
+[dependencies]
+num_cpus = "0.2.5"
+
+[dependencies.rust-gmp]
+git = "https://github.com/fizyk20/rust-gmp.git"
+branch = "rust1.0"
