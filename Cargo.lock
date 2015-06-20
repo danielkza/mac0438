@@ -1,0 +1,29 @@
+[root]
+name = "cos"
+version = "0.1.0"
+dependencies = [
+ "num_cpus 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rust-gmp 0.2.1 (git+https://github.com/fizyk20/rust-gmp.git?branch=rust1.0)",
+]
+
+[[package]]
+name = "libc"
+version = "0.1.8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "num_cpus"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rust-gmp"
+version = "0.2.1"
+source = "git+https://github.com/fizyk20/rust-gmp.git?branch=rust1.0#f9bb3fdfd5619bc682ae06ec82e99b998fbd918c"
+dependencies = [
+ "libc 0.1.8 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
